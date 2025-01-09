@@ -1,0 +1,168 @@
+body {
+    font-family: tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9eae1;
+    color: #333;
+}
+
+header {
+    background-color: #f8a5c2;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header h1 {
+    color: black;
+    font-size: 36px;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.6);
+    margin: 20px 0;
+    position: relative;
+    animation: bounceIn 2s ease;
+}
+
+header h1::after {
+    content: " ™";
+    font-size: 16px;
+    vertical-align: sub;
+    font-style: normal;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #d47b9d;
+}
+
+.container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.container img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 5px solid #f8a5c2;
+}
+
+.container h1 {
+    color: #d47b9d;
+    margin-top: 15px;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(212, 123, 157, 0.6);
+    background-color: #ffe4e1;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #f8a5c2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+audio {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #f8a5c2;
+    border-radius: 8px;
+}
+
+.main-content {
+    background-color: #ffe4e1;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.main-content h2 {
+    color: #d47b9d;
+}
+
+.main-content h3 {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-icons a img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    text-align: center;
+    background-color: #f8a5c2;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@keyframes bounceIn {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+}
+
+img{
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
